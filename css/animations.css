@@ -1,0 +1,80 @@
+/* ============================================================
+   Keyframes & Scroll Reveal
+   ============================================================ */
+
+@keyframes gradientShift {
+  0%   { transform: translate(0, 0) scale(1); }
+  50%  { transform: translate(2%, -1%) scale(1.05); }
+  100% { transform: translate(-2%, 2%) scale(1.08); }
+}
+
+@keyframes floatBlob {
+  0%   { transform: translate(0, 0) scale(1); }
+  33%  { transform: translate(40px, -30px) scale(1.1); }
+  66%  { transform: translate(-30px, 25px) scale(0.95); }
+  100% { transform: translate(0, 0) scale(1); }
+}
+
+@keyframes floatY {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-12px); }
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0; }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50%      { transform: scale(1.4); opacity: 0.6; }
+}
+
+/* Scroll reveal base states */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s var(--ease), transform 0.7s var(--ease);
+  will-change: opacity, transform;
+}
+[data-reveal].in-view { opacity: 1; transform: translateY(0); }
+
+[data-reveal="left"]  { transform: translateX(-32px); }
+[data-reveal="right"] { transform: translateX(32px); }
+[data-reveal="scale"] { transform: scale(0.92); }
+[data-reveal="left"].in-view,
+[data-reveal="right"].in-view { transform: translateX(0); }
+[data-reveal="scale"].in-view { transform: scale(1); }
+
+/* Staggered children delays */
+[data-stagger] > * { transition-delay: calc(var(--i, 0) * 90ms); }
+
+/* Hero entrance */
+.hero-anim {
+  opacity: 0;
+  transform: translateY(24px);
+  animation: heroIn 0.9s var(--ease) forwards;
+}
+.hero-anim.d1 { animation-delay: 0.1s; }
+.hero-anim.d2 { animation-delay: 0.25s; }
+.hero-anim.d3 { animation-delay: 0.4s; }
+.hero-anim.d4 { animation-delay: 0.55s; }
+.hero-anim.d5 { animation-delay: 0.7s; }
+.hero-visual-anim { opacity: 0; animation: heroIn 1s var(--ease) 0.4s forwards; }
+
+@keyframes heroIn {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Shimmer line */
+.shimmer {
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.08), transparent);
+  background-size: 200% 100%;
+  animation: shimmer 2.5s infinite;
+}
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}

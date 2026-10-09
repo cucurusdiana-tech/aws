@@ -1,0 +1,44 @@
+==============================================
+  CUCU RUSDIANA, S.Kom.
+  Full Stack AI Engineer
+==============================================
+
+Tagline : Membangun pengalaman digital cerdas dengan AI dan teknologi web modern.
+Lokasi  : Garut, Indonesia
+Email   : cucurusdiana10@gmail.com
+Telepon : 082295144776
+GitHub  : github.com/cucurusdiana-tech
+Instagram: @cucurusdiana10
+
+----------------------------------------------
+PROFIL
+----------------------------------------------
+Full Stack AI Engineer dengan keahlian dalam pengembangan frontend,
+sistem backend, cloud deployment, dan aplikasi berbasis AI. Fokus pada
+pembangunan platform web yang scalable, perangkat otomasi cerdas, dan
+pengalaman pengguna modern. Menyelesaikan masalah dunia nyata melalui
+arsitektur yang bersih dan teknologi inovatif.
+
+----------------------------------------------
+KEAHLIAN
+----------------------------------------------
+Frontend : React, Next.js, Tailwind CSS, TypeScript, Framer Motion
+Backend  : Node.js, Express.js, Python, FastAPI
+Database : PostgreSQL, MongoDB, Firebase
+AI/Cloud : OpenAI API, LangChain, Docker, AWS, Vercel
+
+----------------------------------------------
+PENGALAMAN
+----------------------------------------------
+Senior Full Stack Engineer  | Novatech Solutions   | 2023 - Sekarang
+Frontend Developer          | PixelForge Labs      | 2021 - 2023
+Junior Software Engineer    | CloudNest AI         | 2019 - 2021
+
+----------------------------------------------
+PROJECT
+----------------------------------------------
+1. AI Task Manager            - React, Node.js, OpenAI API, MongoDB
+2. Smart Chat Assistant       - Next.js, FastAPI, PostgreSQL
+3. DevOps Monitoring Dashboard- React, Express.js, Docker, Chart.js
+
+==============================================

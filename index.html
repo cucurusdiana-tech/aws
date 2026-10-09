@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portofolio personal Cucu Rusdiana, S.Kom. — Full Stack AI Engineer. Membangun pengalaman digital cerdas dengan AI dan teknologi web modern." />
+  <meta name="author" content="Cucu Rusdiana" />
+  <meta name="theme-color" content="#0a0a14" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Cucu Rusdiana — Full Stack AI Engineer" />
+  <meta property="og:description" content="Membangun pengalaman digital cerdas dengan AI dan teknologi web modern." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/profile.png" />
+
+  <title>Cucu Rusdiana — Full Stack AI Engineer</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <!-- Animated gradient + particle background -->
+  <div class="bg-wrap" aria-hidden="true">
+    <div class="bg-gradient"></div>
+    <div class="bg-grid"></div>
+    <canvas id="particles"></canvas>
+    <div class="bg-blob blob-1"></div>
+    <div class="bg-blob blob-2"></div>
+    <div class="bg-blob blob-3"></div>
+  </div>
+
+  <!-- Scroll progress bar -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#hero" class="brand" aria-label="Cucu Rusdiana - beranda">
+        <span class="brand-mark">CR</span>
+        <span class="brand-text">Cucu<span class="accent">.</span>Rusdiana</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Navigasi utama">
+        <a href="#hero" class="nav-link active">Beranda</a>
+        <a href="#about" class="nav-link">Tentang</a>
+        <a href="#skills" class="nav-link">Keahlian</a>
+        <a href="#projects" class="nav-link">Project</a>
+        <a href="#experience" class="nav-link">Pengalaman</a>
+        <a href="#testimonials" class="nav-link">Testimoni</a>
+        <a href="#contact" class="nav-link">Kontak</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Sections are injected here by component loaders -->
+    <div id="hero-root"></div>
+    <div id="about-root"></div>
+    <div id="skills-root"></div>
+    <div id="projects-root"></div>
+    <div id="experience-root"></div>
+    <div id="testimonials-root"></div>
+    <div id="contact-root"></div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#hero" class="brand" aria-label="Cucu Rusdiana - beranda">
+            <span class="brand-mark">CR</span>
+            <span class="brand-text">Cucu<span class="accent">.</span>Rusdiana</span>
+          </a>
+          <p class="footer-tagline">Membangun pengalaman digital cerdas dengan AI dan teknologi web modern.</p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Navigasi footer">
+          <span class="footer-nav-title">Navigasi</span>
+          <a href="#hero">Beranda</a>
+          <a href="#about">Tentang</a>
+          <a href="#skills">Keahlian</a>
+          <a href="#projects">Project</a>
+          <a href="#experience">Pengalaman</a>
+          <a href="#contact">Kontak</a>
+        </nav>
+
+        <div class="footer-social">
+          <span class="footer-nav-title">Terhubung</span>
+          <div class="socials">
+            <a class="social-btn" id="footerGithub" href="#" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.3-1.8-1.3-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 5 18.3 5.3 18.3 5.3c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.8 1 .8 2.1v3c0 .3.2.7.8.6A12 12 0 0 0 12 .5Z"/></svg>
+            </a>
+            <a class="social-btn" id="footerInstagram" href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.3 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.3-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.3-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2Zm0 1.8c-3.1 0-3.5 0-4.7.1-.9 0-1.4.2-1.7.3-.4.2-.7.4-1 .7-.3.3-.5.6-.7 1-.1.3-.3.8-.3 1.7-.1 1.2-.1 1.6-.1 4.7s0 3.5.1 4.7c0 .9.2 1.4.3 1.7.2.4.4.7.7 1 .3.3.6.5 1 .7.3.1.8.3 1.7.3 1.2.1 1.6.1 4.7.1s3.5 0 4.7-.1c.9 0 1.4-.2 1.7-.3.4-.2.7-.4 1-.7.3-.3.5-.6.7-1 .1-.3.3-.8.3-1.7.1-1.2.1-1.6.1-4.7s0-3.5-.1-4.7c0-.9-.2-1.4-.3-1.7-.2-.4-.4-.7-.7-1-.3-.3-.6-.5-1-.7-.3-.1-.8-.3-1.7-.3-1.2-.1-1.6-.1-4.7-.1Zm0 3.1a4.9 4.9 0 1 1 0 9.8 4.9 4.9 0 0 1 0-9.8Zm0 1.8a3.1 3.1 0 1 0 0 6.2 3.1 3.1 0 0 0 0-6.2Zm5.1-.3a1.1 1.1 0 1 1-2.2 0 1.1 1.1 0 0 1 2.2 0Z"/></svg>
+            </a>
+            <a class="social-btn" id="footerEmail" href="#" aria-label="Email" title="Email">✉️</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> Cucu Rusdiana, S.Kom. — Dibangun dengan HTML, CSS &amp; JS.</p>
+        <button class="back-top" id="backTop" aria-label="Kembali ke atas">↑ Ke atas</button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts (type=module for clean component architecture) -->
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
